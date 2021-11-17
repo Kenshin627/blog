@@ -41,3 +41,49 @@ The concept of first-class functions is that functions are no different from any
 used in a program. Functions can be used as arguments and returned as values from
 other functions. This is a deceptively powerful feature for a programming language to
 have. It allows you to abstract out any repetitive computation from your code, and ultimately allows you to write functions that write other functions.
+
+
+# 04 LISTS
+Lists are the single most important data structure in functional programming. One of
+the key reasons is that lists are inherently recursive. A list is either an empty list or an
+element followed by another list
+
+## head tail
+When taking apart a list, the main pieces are the head, the tail.The head is just the first element in a list.The tail is the rest of the list left over, after the head
+![alt](Foundations-of-functional-programming/3.png)
+
+![alt](Foundations-of-functional-programming/4.png)
+
+## cons(:)
+To build a list, you need just one function and the infix operator (:),
+which is called cons. you need to take a value and cons it with another list. The simplest way
+to make a list is to cons a value with the empty list. _**By definition, a list is always a
+value consed with another list (which can also be an empty list)**_
+If you do want to combine two lists, you need to concatenate them by using ++
+
+## lazy evaluation
+Haskell uses a special form of evaluation called lazy evaluation. In lazy evaluation,
+no code is evaluated until it’s needed.
+
+## Common functions on lists
+
+### The !! operator
+If you want to access a particular element of a list by its index, you can use the !! operator. The !! operator takes a list and a number, returning the element at that location in
+the list. _**any infix operator (an operator that’s placed between two values, such as +) can also be used like a prefix function by wrapping it in parentheses**_
+![alt](Foundations-of-functional-programming/5.png)
+
+#### partial application
+_**Using prefix notation can often make things such as partial application easier. Prefix
+notation is also useful for using operators as arguments to other functions. You can still
+use partial application with an infix operator; you just need to wrap the expression in
+parentheses**_
+
+### length
+give the length of the list
+
+### reverse
+reverse the list
+
+### elem
+The elem function takes a value and a list and checks whether the value is in the list
+
