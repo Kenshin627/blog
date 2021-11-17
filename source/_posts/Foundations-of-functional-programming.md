@@ -88,3 +88,13 @@ reverse the list
 The elem function takes a value and a list and checks whether the value is in the list.elem is a function that you may want to treat as an infix operator for readability. _**Any
 binary function can be treated as an infix operator by wrapping it in back-quotes (`)**_
 
+### take and drop
+The take function takes a number and a list as arguments and then returns the first n elements of the list. f you ask for more values then a list has, take gives you what it can, with no error.
+
+### zip 
+You use zip when you want to combine two lists into tuple pairs. The arguments to zip
+are two lists. If one list happens to be longer, zip will stop whenever one of the two lists
+is empty.
+
+### cycle
+
