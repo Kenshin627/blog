@@ -85,5 +85,6 @@ give the length of the list
 reverse the list
 
 ### elem
-The elem function takes a value and a list and checks whether the value is in the list
+The elem function takes a value and a list and checks whether the value is in the list.elem is a function that you may want to treat as an infix operator for readability. _**Any
+binary function can be treated as an infix operator by wrapping it in back-quotes (`)**_
 
