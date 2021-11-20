@@ -148,3 +148,11 @@ The type of a type is called its kind. _**The kind of a type indicates the numbe
 # 07. Maybe
 ## solving missing values with types
 Maybe is a simple but powerful type. So far, all of our parameterized types have been viewed as containers. Maybe is different. _**Maybe is best understood as a type in a context.The context in this case is that the type contained might be missing. Here’s its definition.**_
+![alt](types/22.png)
+When a function returns a value of the Maybe type, the program can’t use that value without dealing with the fact that the value
+is wrapped in a Maybe. Missing values can never cause an error in Haskell because Maybe makes it impossible to forget that a value might be null. At the same time, the programmer never has to worry about this until absolutely necessary. 
+
+_**The interesting thing here is that you didn’t even have to remove the organ from the Maybe context. Maybe implements Eq, so you can just compare two Maybe Organs.**_
+
+## isJust and isNothing
+The Data.Maybe module contains two functions, isJust and isNothing, that solve the general case of handling Just values. 
