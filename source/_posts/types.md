@@ -97,3 +97,54 @@ Sum types are a surprisingly powerful tool, given that they provide only the cap
 
 ## combining functions
 combining functions:A special higher-order function that’s just a period (called compose) takes two functions as arguments.
+![alt](types/13.png)
+
+## Combining like types: Semigroups
+The Semigroup class has only one important method you need, the <> operator. You can think of <> as an operator for combining instances of the same type. 
+![alt](types/14.png)
+_**This simple signature is the heart of the idea of composability; you can take two like
+things and combine them to get a new thing of the same type.**_
+
+## Composing with identity: Monoids
+Another type class that’s similar to Semigroup is Monoid. The only major difference between Semigroup and Monoid is that Monoid requires an identity element for the type. An identity element means that x <> id = x (and id <> x = x). _**Having an identity element might seem like a small detail, but it greatly increases the power of a type by allowing you to use a fold function to easily combine lists of the same type.**_
+![alt](types/15.png)
+
+### mconcat
+_**The mconcat method takes a list of Monoids and combines them, returning a single Monoid.**_
+The easiest way to see how powerful identity is, is to explore the final method in the definition of Monoid: mconcat. The only required definitions in Monoid are mempty and mappend. If you implement these two, you get mconcat for free.This is because the definition of mconcat relies only on foldr, mappend, and mempty. Here’s the definition of mconcat: 
+![alt](types/16.png)
+
+### Monoid laws
+1. mappend mempty x is x
+2. mappend x mempty is x
+3. mappend x (mappend y z) = mappend (mappend x y) z
+4. mconcat = foldr mappend mempty
+
+# 06. PARAMETERIZED TYPES
+If you’re familiar with type generics in languages such as C# and Java, parameterized types will initially seem similar. Like generics in C# and Java, parameterized types allow you to create “containers” that can hold other types.
+
+## definition
+![alt](types/17.png)
+
+## Lists
+A list of type a is either Empty or the consing of the value a with another     list of type a.
+![alt](types/18.png)
+
+## Types with more than one parameter
+Just like functions, types can also take more than one argument. The important thing to remember is that more than one type parameter means the type can be a container for more than one type.
+
+### Tuples
+Tuples are the most ubiquitous multiparameter type in Haskell. tuples use a built-in type constructor, ().you have to use () with one comma inside for every n – 1 items in the tuple. For example, if you want the definition of a 2-tuple, you’d type :info
+(,) into GHCi. Here’s the built-in definition.
+![alt](types/19.png)
+### Data.Map
+Map allows you to look up values by using keys. In many other languages, this data type is called Dictionary. The type parameters of Map are the types of the keys and values. The most common way to build a Map is with the fromList function. 
+![alt](types/20.png)
+![alt](types/21.png)
+
+## Kinds: types of types
+The type of a type is called its kind. _**The kind of a type indicates the number of parameters the type takes, which are expressed using an asterisk (*). Types that take no parameters have a kind of *, types that take one parameter have the kind * -> *, types with two parameters have the kind * -> * -> *, and so forth.**_
+
+# 07. Maybe
+## solving missing values with types
+Maybe is a simple but powerful type. So far, all of our parameterized types have been viewed as containers. Maybe is different. _**Maybe is best understood as a type in a context.The context in this case is that the type contained might be missing. Here’s its definition.**_
