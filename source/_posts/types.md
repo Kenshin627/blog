@@ -1,5 +1,5 @@
 ---
-title: Haskell02-types
+title: Haskell02 - types
 date: 2021-11-18 16:30:41
 tags:
 - haskell 
