@@ -28,6 +28,9 @@ Donotation allows you to assign an IO String variable by using <-, to act like i
 # LAZY I/O
 
 ## the nonlazy way
+![alt](IO/3.png)
+
+![alt](IO/4.png)
 
 ### do-notation in Maybe
 IO can use do-notation because it’s a member of a powerful type class called Monad. We discuss Monad much more in unit 5. Do-notation has nothing to do with IO in particular and can be used by any member of Monad to perform computation in a context. 
