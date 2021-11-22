@@ -32,5 +32,13 @@ Donotation allows you to assign an IO String variable by using <-, to act like i
 
 ![alt](IO/4.png)
 
+## lazy way
+![alt](IO/5.png)
+
 ### do-notation in Maybe
 IO can use do-notation because it’s a member of a powerful type class called Monad. We discuss Monad much more in unit 5. Do-notation has nothing to do with IO in particular and can be used by any member of Monad to perform computation in a context. 
+
+# TEXT AND UNICODE
+
+## The Text type
+Unlike String, Text is implemented as an array under the hood. This makes many string operations faster and much more memory-efficient. Another major difference between Text and String is that Text doesn’t use lazy evaluation. Lazy evaluation proved to be helpful in the preceding lesson, but in many real-world cases it can lead to performance headaches. If you do need lazy text, you can use Data.Text.Lazy, which has the same interface as Data.Text.
