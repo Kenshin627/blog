@@ -41,5 +41,11 @@ The pure method is a useful helper function for taking an ordinary value(also fu
 ## List as a context
 The List type is both a container and a context.List as a container is easy to understand. List is basically a chain of buckets of whatever type of data you want to hold. But List is a member of Applicative,so there must be a way to view List as a context.
 _**List as a context is that it describes nondeterministic computation.**_
-when you add values in the context of a list,you’re adding together all possible values from the two contexts.
+
 ![alt](Context/8.png)
+when you add values in the context of a list,you’re adding together all possible values from the two contexts.
+
+1. A list as a container is a sequence of values that can hold any type. Each item in the list points to the next one or to the empty list.
+2. A list as a context represents a set of possibilities. Think of a list as a context as being a single variable that can contain many possible values.
+
+# MONAD
