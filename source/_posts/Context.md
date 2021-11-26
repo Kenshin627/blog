@@ -49,3 +49,19 @@ when you add values in the context of a list,you’re adding together all possib
 2. A list as a context represents a set of possibilities. Think of a list as a context as being a single variable that can contain many possible values.
 
 # MONAD
+## The Monad type class
+![alt](Context/10.jpg)
+
+![alt](Context/11.png)
+
+### The bind operator: >>=
+![alt](Context/9.png)
+_**As you can see, >>= allows you to chain together a function of a type (a -> m b)**_
+
+## the list Monad
+when you assign your list to a variable using <-, you get to treat it as though it were a single value. The rest of this code looks like it’s operating on one candidate, and yet the final result is the same as applying your logic to every candidate in a list.
+![alt](Context/12.png)
+
+### Building lists with the list monad
+
+![alt](Context/13.png)
