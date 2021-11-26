@@ -65,3 +65,11 @@ when you assign your list to a variable using <-, you get to treat it as though 
 ### Building lists with the list monad
 
 ![alt](Context/13.png)
+
+### The guard function
+Again you could use filter, but when working with monads, you’d like to be able to reason about a value outside its context. In Control.Monad, a function called guard allows you to filter your values in a list. You have to import Control.Monad to use guard. 
+![alt](Context/14.png)
+
+
+### list comprehensions
+![alt](Context/15.png)
