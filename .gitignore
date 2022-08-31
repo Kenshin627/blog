@@ -3,3 +3,4 @@
 package-lock.json
 db.json
 /.deploy_git
+.deploy_git
