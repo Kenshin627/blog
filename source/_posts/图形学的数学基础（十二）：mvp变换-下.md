@@ -188,3 +188,28 @@ $\textbf{M}_{perspective} = \textbf{M}_{orthographic}\textbf{M}_{persp->ortho} =
 
 ![正交投影和透视投影](图形学的数学基础（十二）：mvp变换-下/9.jpg)
 
+- 屏幕左下角为原点（0，0）
+- 向右为x，向上为y
+- 像素（pixel）的坐标以（x，y）表示，xy均为整数
+- 像素坐标的范围 （0，0） ~ （width - 1，height - 1）
+- Pixel（x，y）的中心点位于（x+0.5，y+0.5）
+- 每个像素形成单位宽高的“正方体”
+- 屏幕空间覆盖范围为（0，0）~（width，height）
+  
+### 从$[-1,1]^2 到 [0,width] [0,height]$
+
+原地缩放 $\begin{bmatrix}
+     \dfrac{width}{2}\\ 
+    \dfrac{height}{2}
+\end{bmatrix}$，然后平移到$\begin{bmatrix}
+    \dfrac{width}{2}\\ 
+    \dfrac{height}{2}
+\end{bmatrix}$
+
+$\textbf{M}_{viewport} = \begin{bmatrix}
+    \dfrac{width}{2}&0&0&\dfrac{width}{2}\\ 
+    0&\dfrac{height}{2}&0&\dfrac{height}{2}\\ 
+    0&0&1&0\\ 
+    0&0&0&1\\ 
+\end{bmatrix}$
+
