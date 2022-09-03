@@ -213,3 +213,9 @@ $\textbf{M}_{viewport} = \begin{bmatrix}
     0&0&0&1\\ 
 \end{bmatrix}$
 
+## 参考
+[《3D数学基础》图形和游戏开发(第二版)](https://item.jd.com/12659881.html)
+
+[GAMES101 -现代计算机图形学入门-闫令琪](https://www.bilibili.com/video/BV1X7411F744?p=5&spm_id_from=pageDriver&vd_source=b3b87210888ec87be647603921054a36)
+
+[fundamentals-of-computer-graphics](https://item.jd.com/10037953813770.html)
