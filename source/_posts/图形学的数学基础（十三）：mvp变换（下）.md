@@ -1,5 +1,5 @@
 ---
-title: 图形学的数学基础（十二）：mvp变换(下)
+title: 图形学的数学基础（十三）：mvp变换(下)
 date: 2022-09-03 13:45:47
 tags:
 - Computer Graphic
@@ -11,7 +11,7 @@ categories:
 - 计算机图形学的数学基础
 ---
 
-# 图形学的数学基础（十二）：mvp变换（下）
+# 图形学的数学基础（十三）：mvp变换（下）
 
 本章我们将实现mvp变换中的投影变换（$projection Transform$和视口变换($viewport)，投影变换有两种方式，分别为正交投影（$Orthographic projection$）和透视投影（$perspective projection$）.两种投影方式最终都将视景体内的物体投影到近平面上（将视图从相机空间映射到$[-１,１]^３$），也是3D空间映射到2D屏幕空间最为关键的一步。的标准立方体中，如下图所示：
 
