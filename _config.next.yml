@@ -14,7 +14,7 @@ cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: false
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -38,12 +38,12 @@ custom_file_path:
 
 # Schemes
 # scheme: Muse
-#scheme: Mist
+scheme: Mist
 # scheme: Pisces
-scheme: Gemini
+# scheme: Gemini
 
 # Dark Mode
-darkmode: true
+darkmode: false
 
 
 # ---------------------------------------------------------------
@@ -141,9 +141,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/author.jpg
+  url: /images/author.png
   # If true, the avatar will be displayed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -168,7 +168,7 @@ social:
 social_icons:
   enable: true
   icons_only: false
-  transition: false
+  transition: true
 
 # Blog rolls
 links_settings:
@@ -258,7 +258,7 @@ post_meta:
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
-  item_text_total: false
+  item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -349,8 +349,8 @@ mobile_layout_economy: false
 
 # Browser header panel color.
 theme_color:
-  light: "#222"
-  dark: "#222"
+  light: "#000"
+  dark: "#000"
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -363,8 +363,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: base16/onedark
-    dark: base16/onedark
+    light: base16/dracula
+    dark: base16/dracula
   prism:
     light: prism
     dark: prism-dark
@@ -389,7 +389,7 @@ reading_progress:
   # Available values: top | bottom
   position: top
   reversed: false
-  color: "#111"
+  color: "#333"
   height: 3px
 
 # Bookmark Support
@@ -830,7 +830,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -926,3 +926,43 @@ vendors:
 css: css
 js: js
 images: images
+
+
+# JavaScript 3D library.
+# Dependencies: https://github.com/next-theme/hexo-next-three
+three:
+  enable: true
+  defer: true
+  cdn:
+  waves:
+    enable: true
+    cdn:
+  lines:
+    enable: false
+    cdn:
+  sphere:
+    enable: false
+    cdn:
+
+# giscus
+
+giscus:
+  enable: true
+  repo: Kenshin627/BlogGiscus
+  repo_id: R_kgDOJ-E6Aw
+  category: Announcements
+  category_id: DIC_kwDOJ-E6A84CYCOU
+  # Available values: pathname | url | title | og:title
+  mapping: pathname
+  # Available values: 0 | 1
+  reactions_enabled: 1
+   # Available values: 0 | 1
+  emit_metadata: 1
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+  theme: dark_dimmed
+  # Available values: en | zh-CN
+  lang: zh-CN
+  # Place the comment box above the comments
+  input_position: top
+  # Load the comments lazily
+  loading: lazy

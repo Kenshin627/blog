@@ -21,11 +21,14 @@
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-next-giscus": "^1.1.0",
+    "hexo-next-three": "github:next-theme/hexo-next-three",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^2.0.0",
     "hexo-tag-bootstrap": "^0.2.2",
-    "hexo-theme-next": "^8.17.1"
+    "hexo-theme-next": "^8.17.1",
+    "hexo-word-counter": "^0.1.0"
   }
 }
