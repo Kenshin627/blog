@@ -1,6 +1,6 @@
 ---
 title: Computer Graphic01-线性代数
-date: 2024-03-23 23:00:09
+date: 2023-01-23 23:00:09
 tags:
 - Computer Graphic
 - Math
