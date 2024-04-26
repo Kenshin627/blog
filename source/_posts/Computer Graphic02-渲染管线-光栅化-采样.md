@@ -1,6 +1,6 @@
 ---
 title: Computer Graphic02-渲染管线-光栅化-采样
-date: 2024-03-26 10:20:09
+date: 2023-05-02 20:20:09
 tags:
 - Computer Graphic
 - Math
