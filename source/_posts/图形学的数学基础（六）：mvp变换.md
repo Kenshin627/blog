@@ -1,6 +1,6 @@
 ---
 title: 图形学的数学基础（六）：mvp变换
-date: 2022-09-03 10:55:40
+date: 2022-06-01 21:21:10
 tags:
 - Computer Graphic
 - Math
