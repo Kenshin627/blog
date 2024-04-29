@@ -1,6 +1,6 @@
 ---
 title: Computer Graphic04-空间变换-下
-date: 2023-05-05 21:00:57
+date: 2023-05-06 12:00:57
 tags:
 - Computer Graphic
 - Math

@@ -1,5 +1,5 @@
 ---
-title: Computer-Graphic05-纹理采样
+title: Computer-Graphic06-纹理采样
 date: 2023-05-09 20:41:56
 tags:
 - Computer Graphic
@@ -10,7 +10,7 @@ categories:
 - Math
 ---
 
-# Computer-Graphic05-纹理采样
+# Computer-Graphic06-纹理采样
 顶点插值属性不仅仅是颜色值，而是某种可以进行纹理映射的纹理坐标，那么什么是纹理映射？纹理映射一个很好的类比就是包装一份礼物，我有一些彩纸，上面绘制了一些有趣的图案，还有一个平平无奇的立方体，只是一个扁平的盒子，我想把这个有趣的图案放在盒子上，该怎么做呢？把纸包裹在盒子上就行了，这本质上就是纹理映射，将二维图像包裹在三维表面上的方法。
 
 ![0.png](Computer-Graphic05-纹理采样/0.png)
