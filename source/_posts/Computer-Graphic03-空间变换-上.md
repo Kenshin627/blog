@@ -1,5 +1,5 @@
 ---
-title: Computer Graphic03-空间变换(上)
+title: Computer Graphic03-空间变换-上
 date: 2023-05-03 12:00:57
 tags:
 - Computer Graphic

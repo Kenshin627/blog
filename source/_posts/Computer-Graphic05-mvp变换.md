@@ -122,12 +122,11 @@ $View frustum$是相机的可视区域：
 正交投影会保持几何图元相对位置关系不变，平行的线永远平行。不满足透视关系。又叫做平行投影。
 正交投影的视锥体是一个长方形，由top bottom left right near far6个参数定义。如下图所示：
 
-![正交投影和透视投影](图形学的数学基础（六）：mvp变换/7.png)
+![正交投影和透视投影](Computer-Graphic05-mvp变换/22.png)
 
 如何将该长方体映射到$[-1,1]^3$呢?和$\textbf{M}_{view}$类似,我们先将立方体中心移动到原地,然后根据每个方向的长度,缩放到[-1,1]之间.即$\textbf{M}_{scale}$$\textbf{M}_{translate}$.需要一次平移变换 + 一次缩放变换.
 
-![正交投影和透视投影](图形学的数学基础（六）：mvp变换/8.jpg)
-
+![正交投影和透视投影](Computer-Graphic05-mvp变换/23.jpg)
 
 ##### $\textbf{M}_{translate}$平移矩阵
 
@@ -181,7 +180,7 @@ $\textbf{M}_{orthographic} = \textbf{M}_{scale}$$\textbf{M}_{translate} = \begin
  $aspectRatio（长宽比）$：定义近平面的宽高比
 - $n（近平面距离）$：近平面距离原点距离
 
-![正交投影和透视投影](图形学的数学基础（六）：mvp变换/11.jpg)
+![正交投影和透视投影](Computer-Graphic05-mvp变换/21.jpg)
 
 由视锥体的参数可以推导出$l,r,b,t$：
 
@@ -195,7 +194,7 @@ $aspectRatio = \dfrac{r}{t}$
 $\textbf{M}_{perspective} = \textbf{M}_{orthographic}\textbf{M}_{persp->ortho}$
 
 ##### “挤压变换”
-![正交投影和透视投影](图形学的数学基础（六）：mvp变换/10.jpg)
+![正交投影和透视投影](Computer-Graphic05-mvp变换/20.jpg)
 
 任选一点P，如果将其“挤压”至P1点，我们观察$\triangle{OPR}和\triangle{NPP1}$,不难发现两个三角形是相似三角形，根据相似三角形定律: $y^丶 = \dfrac{ny}{z}$,同理 $x^丶 = \dfrac{nx}{z}$.
 
