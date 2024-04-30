@@ -1,6 +1,6 @@
 ---
 title: Computer Graphic07-深度缓冲和透明度
-date: 2024-06-02 20:18:00
+date: 2023-06-02 20:18:00
 tags:
 - Computer Graphic
 - Math
