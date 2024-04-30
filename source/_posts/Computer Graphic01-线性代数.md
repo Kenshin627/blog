@@ -8,6 +8,7 @@ mathjax: true
 categories:
 - Computer Graphic
 - Math
+description: 在计算机图形学中，需要处理多种类型数据，这些数据可能看起来不像一个小箭头，比如多项式，图像，辐射亮度(radiance)等，但它们的行为表现却是和向量一致的，所以这个小箭头仍然是一个有用的思维模式。
 ---
 
 # Computer Graphic01-线性代数

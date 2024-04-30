@@ -8,6 +8,7 @@ mathjax: true
 categories:
 - Computer Graphic
 - Math
+description: 上一篇文章中介绍了旋转和反射变换,这章我们开始介绍剩下几种变换:缩放/平移/错切。
 ---
 
 # Computer Graphic04-空间变换-下

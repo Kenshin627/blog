@@ -8,6 +8,7 @@ mathjax: true
 categories:
 - Computer Graphic
 - Math
+description: mvp空间变换:世界空间 -> 相机空间，相机空间 -> NDC空间，NDC空间 -> 屏幕空间
 ---
 
 # Computer-Graphic05-mvp变换
