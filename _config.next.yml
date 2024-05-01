@@ -390,7 +390,7 @@ reading_progress:
   position: top
   reversed: false
   color: "#575757"
-  height: 5px
+  height: 3px
 
 # Bookmark Support
 bookmark:
@@ -527,7 +527,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme:
     light: default
@@ -931,14 +931,14 @@ images: images
 # JavaScript 3D library.
 # Dependencies: https://github.com/next-theme/hexo-next-three
 three:
-  enable: true
+  enable: false
   defer: true
   cdn:
   waves:
-    enable: true
+    enable: false
     cdn:
   lines:
-    enable: false
+    enable: true
     cdn:
   sphere:
     enable: false
@@ -966,3 +966,44 @@ giscus:
   input_position: top
   # Load the comments lazily
   loading: lazy
+
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: true
+  per_page: true
+
+#enabled:  true/false   开启/关闭
+#id: song id / playlist id / album id / search keyword   歌曲ID、歌单ID、关键字
+#server: netease, tencent, kugou, xiami, baidu     音乐平台
+#type: song, playlist, album, search, artist  类型
+#auto: music link, support: netease, tencent, xiami
+#fixed: true/false   吸底模式
+#mini: true/false   迷你模式
+#autoplay: true/false   自动播放
+#theme: #eeeeee 主题颜色
+#loop: values: 'all', 'one', 'none' 循环播放
+#order: values: 'list', 'random' 是否随机播放
+#preload: values: 'none', 'metadata', 'auto' 预载入
+
+aplayer:
+  enabled: true
+  id: 8647182734
+  server: netease
+  type: playlist
+  auto:
+  fixed: true
+  mini: true
+  autoplay: true
+  theme: #555555
+  loop: 'all'
+  order: 'random'
+  preload: 'auto'
+  volume: 0.7
+  mutex: true
+  listfolded: true
+  listmaxheight: 340px
+  storagename: metingjs
+  cdn:
+    css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+    js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
+    meting: https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
