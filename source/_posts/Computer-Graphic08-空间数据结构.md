@@ -1,6 +1,6 @@
 ---
 title: Computer-Graphic08-空间数据结构
-date: 2023-06-03 20:18:00
+date: 2024-07-06 20:18:00
 tags:
 - Computer Graphic
 - Math
